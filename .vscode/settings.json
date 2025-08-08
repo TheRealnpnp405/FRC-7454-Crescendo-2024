@@ -1,0 +1,68 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.server.launchMode": "Standard",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "bin/": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/*~": true
+  },
+  "java.test.config": [
+    {
+      "name": "WPIlibUnitTests",
+      "workingDirectory": "${workspaceFolder}/build/jni/release",
+      "vmargs": [ "-Djava.library.path=${workspaceFolder}/build/jni/release" ],
+      "env": {
+        "LD_LIBRARY_PATH": "${workspaceFolder}/build/jni/release" ,
+        "DYLD_LIBRARY_PATH": "${workspaceFolder}/build/jni/release"
+      }
+    },
+  ],
+  "java.test.defaultConfig": "WPIlibUnitTests",
+  "cSpell.words": [
+    "avgarea",
+    "avgdist",
+    "botpose",
+    "Brushless",
+    "camerapose",
+    "cameraspace",
+    "capturesnapshot",
+    "cscore",
+    "doubleclick",
+    "Fiducials",
+    "getlastchange",
+    "getpipe",
+    "Lfeet",
+    "limeclose",
+    "limefar",
+    "lljson",
+    "llpython",
+    "llrobot",
+    "motorcontrol",
+    "Odometry",
+    "priorityid",
+    "revrobotics",
+    "Rfeet",
+    "RIOFPGA",
+    "robotspace",
+    "snapname",
+    "tagcount",
+    "TAKESNAPSHOT",
+    "targetpose",
+    "targetspace",
+    "tclass",
+    "teleop",
+    "teleoperated",
+    "wpiblue",
+    "wpilibj",
+    "wpired"
+  ],
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable"
+}
